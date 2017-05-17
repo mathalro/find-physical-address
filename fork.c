@@ -29,10 +29,10 @@ unsigned long getNumeroPageFrame(void *addr) {
     return page_frame_number;
 }
 
-int main ()
-{
-   int retval;
+int main () {
+   int retval, aux = 1;
    int *ptr;
+   ptr = &aux;
    retval = fork();
    if (retval < 0) {
       perror ("Erro") ;
